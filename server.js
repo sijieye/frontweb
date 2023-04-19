@@ -9,7 +9,7 @@ const port = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname, 'client', 'build/index.html')));
+app.use(express.static(path.join(__dirname, 'client', 'build')));
 
 app.listen(port, () => {
     console.log(`Server is running on port 3001.`);
